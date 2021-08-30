@@ -1,0 +1,10 @@
+Cadastro de Marca :
+GET : https://softmaxapi.com:6363/api/Marca/index
+POST : https://softmaxapi.com:6363/api/Marca/store // exemplo body request : {'nome': 'nome-da-marca'}
+PUT : https://softmaxapi.com:6363/api/Marca/update // exemplo body request : {'id': integer, 'nome': 'nome-da-marca'}
+DELETE : https://softmaxapi.com:6363/api/Marca/delete // exemplo body request : {'id': integer}
+Cadastro de Produto :
+GET : https://softmaxapi.com:6363/api/Produto/index
+POST : https://softmaxapi.com:6363/api/Produto/store // exemplo body request : {'nome': String, 'estoque': integer, 'marca-id': id-marca}
+PUT : https://softmaxapi.com:6363/api/Produto/update // exemplo body request : {'id': integer, 'nome': String, 'estoque': integer, 'marca-id': id-marca}
+DELETE : https://softmaxapi.com:6363/api/Produto/delete // exemplo body request : {'id': integer}

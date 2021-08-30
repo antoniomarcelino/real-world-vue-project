@@ -1,0 +1,100 @@
+{
+  "marcas": [
+    {
+      "id": 0,
+      "nome": "Nike"
+    },
+    {
+      "id": 1,
+      "nome": "Primetek"
+    },
+    {
+      "id": 2,
+      "nome": "Victoria Secret"
+    },
+    {
+      "id": 3,
+      "nome": "ASUS"
+    }
+  ],
+  "produtos": [
+    {
+      "id": 0,
+      "nome": "Men's Casual Premium Slim Fit T-Shirts",
+      "estoque": "100",
+      "marca-id": 0
+    },
+    {
+      "id": 1,
+      "nome": "Mens Dressed Thick Fit",
+      "estoque": 300,
+      "marca-id": 0
+    },
+    {
+      "id": 2,
+      "nome": "John's Naga Gold & Silver Dragon Station Chain Bracelet",
+      "estoque": 400,
+      "marca-id": 3
+    },
+    {
+      "id": 3,
+      "nome": "White Gold Plated Princess",
+      "estoque": 500,
+      "marca-id": 3
+    },
+    {
+      "id": 4,
+      "nome": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+      "estoque": 600,
+      "marca-id": 3
+    },
+    {
+      "id": 5,
+      "nome": "WD 2TB Elements Portable External Hard Drive - USB 3.0",
+      "estoque": 700,
+      "marca-id": 2
+    },
+    {
+      "id": 6,
+      "nome": "SanDisk SSD PLUS 1TB Internal SSD 6 Gb/s",
+      "estoque": 800,
+      "marca-id": 1
+    },
+    {
+      "id": 7,
+      "nome": "WD 4TB Gaming Drive Works with Playstation 4",
+      "estoque": 900,
+      "marca-id": 2
+    },
+    {
+      "id": 8,
+      "nome": "ASUS SB220Q bi 21.5 inches Full HD",
+      "estoque": 100,
+      "marca-id": 4
+    },
+    {
+      "id": 9,
+      "nome": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen",
+      "estoque": 200,
+      "marca-id": 1
+    },
+    {
+      "id": 10,
+      "nome": "Women's 3-in-1 Snowboard Jacket Winter Coats",
+      "estoque": 300,
+      "marca-id": 3
+    },
+    {
+      "id": 11,
+      "nome": "Rain Jacket Women Windbreaker Striped",
+      "estoque": 400,
+      "marca-id": 1
+    },
+    {
+      "id": 12,
+      "nome": "DANVOUY Women's T Shirt Cotton",
+      "estoque": 500,
+      "marca-id": 1
+    }
+  ]
+}
