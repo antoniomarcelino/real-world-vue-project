@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const apiClient = axios.create({
-  baseURL: `http://localhost:3000`,
+  baseURL: `https://softmaxapi.com:6363/api`,
   withCredentials: false,
   headers: {
     Accept: 'application/json',
@@ -11,10 +11,36 @@ const apiClient = axios.create({
 
 export default {
   deleteBrand(id) {
+    return apiClient.delete('/Marca/delete/' + id)
+  },
+  editBrand(brand) {
+    return apiClient.put('/Marca/update/' + brand.id, brand)
+  },
+  postBrand(brand) {
+    return apiClient.post('/Marca/store/', brand)
+  },
+  getBrands(perPage, page) {
+    return apiClient.get('/Marca?_limit=' + perPage + '&_page=' + page)
+  },
+  getBrand(id) {
+    return apiClient.get('/Marca/' + id)
+  }
+}
+
+/*
+#### ALTERNATIVAMENTE USAR ####
+
+json-server --watch db.json
+
+baseURL = `http://localhost:3000`
+
+...
+
+export default {
+  deleteBrand(id) {
     return apiClient.delete('/marcas/' + id)
   },
   editBrand(brand) {
-    console.log('im here: ' + brand.id)
     return apiClient.put('/marcas/' + brand.id, brand)
   },
   postBrand(brand) {
@@ -27,3 +53,4 @@ export default {
     return apiClient.get('/marcas/' + id)
   }
 }
+*/

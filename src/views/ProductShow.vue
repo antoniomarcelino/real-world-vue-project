@@ -55,12 +55,6 @@
           value="Excluir"
         />
       </div>
-
-      <!-- <h1>{{ brandName }}</h1>
-        <ul v-for="(brand, index) in brands" :key="index">
-          <li>{{ brand.id }}</li>
-          <li>{{ brand.nome }}</li>
-        </ul> -->
     </div>
   </div>
 </template>
