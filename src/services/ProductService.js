@@ -33,30 +33,35 @@ export default {
 /*
 #### ALTERNATIVAMENTE USAR ####
 
-json-server --watch db.json
-
-baseURL = `http://localhost:3000`
-
 ...
+
+const apiClient = axios.create({
+  baseURL: `https://softmaxapi.com:6363/api`,
+  withCredentials: false,
+  headers: {
+    Accept: 'application/json',
+    'Content-Type': 'application/json'
+  }
+})
 
 export default {
   deleteProduct(id) {
-    return apiClient.delete('/produtos/' + id)
+    return apiClient.delete('/Produto/delete/' + id)
   },
   editProduct(product) {
-    return apiClient.put('/produtos/' + product.id, product)
+    return apiClient.put('/Produto/update/' + product.id, product)
   },
   postProduct(product) {
-    return apiClient.post('/produtos', product)
+    return apiClient.post('/Produto/store/', product)
   },
   getProducts(perPage, page) {
-    return apiClient.get('/produtos?_limit=' + perPage + '&_page=' + page)
+    return apiClient.get('/Produto?_limit=' + perPage + '&_page=' + page)
   },
   getProduct(id) {
-    return apiClient.get('/produtos/' + id)
+    return apiClient.get('/Produto/' + id)
   },
   getAllBrands() {
-    return apiClient.get('/marcas')
+    return apiClient.get('/Marca/')
   }
 }
 */
